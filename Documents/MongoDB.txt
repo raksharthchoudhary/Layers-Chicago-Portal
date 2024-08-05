@@ -1,0 +1,5 @@
+~DEV Details~~
+User ID: rchoudhary
+Pass: 4WwZ0Y7OdAWBw2rw
+
+ConnectionString: mongodb+srv://rchoudhary:4WwZ0Y7OdAWBw2rw@atlascluster.m70k43i.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster

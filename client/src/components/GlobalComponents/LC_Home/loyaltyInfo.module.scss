@@ -1,0 +1,107 @@
+.cellStyle {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  box-shadow: 
+  0px 1.5px 0px 0px rgba(0, 0, 0, 0.15),
+  0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.container {
+  background-color: #fff;
+  border-style: solid;
+  border-color: var(--secondary-main);
+  margin: 0.5%;
+  margin-bottom: 1%;
+  width: auto;
+  border-width: 3px;
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.container .head {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(67, 177, 73, 0.75);
+}
+
+.container .head .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .head .row .cell {
+  @extend .cellStyle;
+  color: #fff;
+  flex: 1;
+  padding: 1%;
+  text-align: left;
+  box-shadow: none;
+  border-bottom: 0;
+}
+
+.container .head .row .firstCell {
+  padding: 0.25%;
+  padding-left: 0.75%;
+  flex: 0 0 350px;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.container .head .row .cell .info {
+  position: relative;
+  display: flex;
+  text-transform: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: content-box;
+  background-color: transparent;
+  box-shadow: none;
+  padding-left: 0.25%;
+}
+
+.container .head .row .cell .info .title {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+  font-style: italic;
+
+  &:hover {
+    color: var(--info-dark);
+    text-decoration: underline;
+  } 
+}
+
+.container .body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.container .body .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .body .row .cell {
+  @extend .cellStyle;
+
+  flex: 1;
+  font-size: 0.95rem;
+  color: #000;
+  padding: 0.75%;
+}
+
+.container .body .row .firstCell {
+  flex: 0 0 350px;
+  max-width: 350px;
+  min-width: 350px;
+}

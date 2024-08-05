@@ -1,0 +1,46 @@
+.fontFamily {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.0rem;
+}
+
+.appBar {
+    background-color: var(--primary-main);
+    color: var(--custom-main);
+    position: sticky;
+    z-index: 1100;
+    top: 0;
+    margin-top: -1px;
+    height: 52px;
+    padding-left: 15px;
+    padding-right: 16px;
+    display: flex;
+    border-radius: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appBar .textBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.appBar .textBox .userName {
+    @extend .fontFamily;
+    font-weight: 100;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.appBar .textBox .layersChi {
+    @extend .fontFamily;
+    padding-left: 3px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.03em;
+}

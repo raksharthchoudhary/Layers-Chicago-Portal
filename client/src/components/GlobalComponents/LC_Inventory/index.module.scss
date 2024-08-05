@@ -1,0 +1,142 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.button {
+  background-color: #fff;
+  color: var(--secondary-main);
+  padding: 5px;
+  box-shadow: 
+  0px 3px 1px -2px rgba(0,0,0,0.2), 
+  0px 2px 2px 0px rgba(0,0,0,0.14), 
+  0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.grid {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  font-size: 0.85rem;
+  min-height: calc(100vh - 109px);
+  width: 100%;
+  min-width: 1000px; // Adjust based on your table's total minimum width
+}
+
+.grid .cell {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.grid .columnHeader {
+  position: relative;
+  top: -1;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; // Vertically center the text
+  text-align: center;
+}
+
+.grid .columnHeaderTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: normal; // Allow text to wrap
+  line-height: 1.05; // Adjust line-height for better readability
+}
+
+.grid .toolbarContainer {
+  position: sticky;
+  min-height: 45px;
+  z-index: 1;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.grid .footerContainer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid .footerContainer .componentBar {
+  background-color: transparent;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  min-height: 48px;
+  color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grid .footerContainer .componentBar .addButton {
+  @extend .button;
+  color: #fff;
+  margin-right: 5px;
+  background-color: var(--info-main);
+}
+
+.grid .footerContainer .componentBar .deleteButton {
+  @extend .button;
+  color: #fff;
+  margin-left: 5px;
+  background-color: var(--error-main);
+}
+/* $shadow-hover: 
+    0px 6px 2.5px -4px rgba(0,0,0,0.25), 
+    0px 4px 5px 0px rgba(0,0,0,0.175), 
+    0px 2px 12.5px 0px rgba(0,0,0,0.15);
+  
+  @mixin button (
+    $backgroundColor: var(--secondary-main),
+    $shadow:(
+    0px 3px 1.25px -2px rgba(0,0,0,0.25), 
+    0px 2px 2.5px 0px rgba(0,0,0,0.175), 
+    0px 1px 6.25px 0px rgba(0,0,0,0.15)),
+  ){
+    transition-duration: 150ms;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 20px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    box-shadow: $shadow;
+    background-color: $backgroundColor;
+  }
+
+  .add {
+    @include button($backgroundColor: var(--info-main));
+  }
+
+  .add:hover {
+    @include button($backgroundColor: var(--info-dark), $shadow: $shadow-hover);
+  }
+
+  .cancel {
+    @include button($backgroundColor: var(--warning-main));
+  }
+
+  .cancel:hover {
+    @include button($backgroundColor: var(--warning-light), $shadow: $shadow-hover);
+  }
+
+  .delete {
+    @include button($backgroundColor: var(--error-main));
+  }
+
+  .delete:hover {
+    @include button($backgroundColor: var(--error-dark), $shadow: $shadow-hover);
+  } */

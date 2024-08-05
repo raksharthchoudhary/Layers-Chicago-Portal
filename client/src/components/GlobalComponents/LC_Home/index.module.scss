@@ -1,0 +1,221 @@
+  .background {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../../assets/LayersHome.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .pageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 0;
+    height: calc(100vh - 64px);
+    width: 100%;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow:
+    0px 3px 1.25px -2px rgba(0,0,0,0.25), 
+    0px 2px 2.5px 0px rgba(0,0,0,0.175), 
+    0px 1px 6.25px 0px rgba(0,0,0,0.15);
+  }
+
+  .button {
+    position: relative;
+    display: flex;
+    text-transform: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: content-box;
+    background-color: transparent;
+  }
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.025rem;
+  }
+
+  .pageContainer .containerOne {
+    @extend .pageContainer;
+
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .pageContainer .containerOne .infoCard {
+    @extend .card;
+
+    margin: 3%;
+    padding: 1.5%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.5);
+  }
+
+  .pageContainer .containerOne .infoCard .header {
+    @extend .button;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: none;
+    padding: 0.75%;
+    width: 100%;
+  }
+
+  .pageContainer .containerOne .infoCard .header .buttons {
+    color: #fff;
+    padding: 2%;
+    border-radius: 25px;
+    text-transform: none;
+    font-size: 1.15rem;
+
+    &:hover {
+      color: var(--custom-main);
+
+      .icons {
+        background-color: var(--custom-main);
+      }
+    }
+  }
+
+  .pageContainer .containerOne .infoCard .header .buttons .icons {
+    margin-right: 16px;
+    margin-left: 6px;
+    font-size: x-large;
+    padding: 15%;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+  }
+
+  .pageContainer .containerOne .infoCard .footer {
+    @extend .button;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: none;
+    padding: 0.75%;
+    padding-left: 1.5%;
+  }
+
+  .pageContainer .containerOne .infoCard .footer .buttons {
+    color: #fff;
+    text-transform: none;
+    font-size: 1.15rem;
+
+    &:hover {
+      color: var(--custom-main);
+    }
+  }
+
+  .pageContainer .containerOne .infoCard .footer .buttons .icons {
+    margin-right: 4px;
+    padding: 0.5%;
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: inherit;
+    color: inherit;
+    box-shadow: none;    
+  }
+
+  .pageContainer .containerTwo {
+    @extend .pageContainer;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .pageContainer .containerTwo .infoCard {
+    @extend .card;
+
+    justify-content: flex-start;
+    margin: 1%;
+    padding: 0.5%;
+    height: 70%;
+    color: var(--primary-main);
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .pageContainer .containerTwo .infoCard .header {
+    @extend .button;
+
+    padding: 0.25%;
+    padding-left: 1%;
+    color: var(--primary-main);
+  }
+
+  .pageContainer .containerTwo .infoCard .header .headerTitle {
+    @extend .title;
+    font-size: 1.35rem;
+  }
+
+  .pageContainer .containerTwo .infoCardTwo {
+    @extend .card;
+
+    justify-content: flex-start;
+    margin: 1%;
+    padding: 0.5%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.85)
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .header {
+    @extend .button;
+
+    position: sticky;
+    padding: 0.25%;
+    padding-left: 0.1%;
+    color: #000;
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .header .headerTitle {
+    @extend .title;
+    font-size: 1.35rem;
+    font-style: italic;
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .list {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .list .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1%;
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .list .item .checkBox {
+    background-color: var(--warning-dark);
+    transition-duration: 250ms;
+    color: #fff;
+    padding: 0.2%;
+
+    &:hover {
+      background-color: var(--info-main);
+    }
+  }
+
+  .pageContainer .containerTwo .infoCardTwo .list .item .title {
+    color: var(--primary-main);
+    font-size: 1.05rem;
+    padding-left: 1%;
+  }

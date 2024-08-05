@@ -1,0 +1,11 @@
+To build the server-side of your application, you’ll need a few key tools and technologies. Here’s a list of some that you might find useful:
+
+Node.js: This is the runtime environment that will run your server-side JavaScript code.
+Express.js: This is a web application framework for Node.js that simplifies the process of writing server code.
+Database: You’ll need a database to store your application’s data. This could be a SQL database like PostgreSQL or MySQL, or a NoSQL database like MongoDB, depending on your needs.
+ORM/ODM: An Object-Relational Mapping (ORM) tool like Sequelize (for SQL databases) or an Object-Data Mapping (ODM) tool like Mongoose (for MongoDB) can simplify the process of working with your database in JavaScript.
+Dotenv: This is a module that loads environment variables from a .env file into process.env, which can be useful for managing sensitive information like database credentials.
+Nodemon: This is a utility that automatically restarts your Node.js server whenever file changes are detected, which can speed up your development process.
+CORS: CORS (Cross-Origin Resource Sharing) is a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. You’ll need the CORS middleware for Express.js to handle CORS.
+Body-parser: This is a middleware that allows you to parse incoming request bodies, which can be necessary when you’re handling HTTP POST requests.
+Morgan: This is a HTTP request logger middleware for Node.js. It simplifies the process of logging requests to your application.

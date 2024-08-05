@@ -1,0 +1,52 @@
+  .searchBar {
+    transition-duration: 250ms;
+    color: var(--custom-main);
+    border-radius: 25px;
+    width: 24%;
+    padding-left: 3px;
+    padding-right: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .searchBar:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .searchBar:focus-within {
+    color: #000;
+    width: 40%;
+    background-color: rgb(255, 255, 255); 
+  }
+
+  .searchBar .searchIcon {
+    color: var(--custom-main);
+  }
+
+  .searchBar:focus-within .searchIcon {
+    color: #000;
+  }
+
+  .searchBar .textContainer {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: var(--custom-main);
+  }
+
+  .searchBar:focus-within .textContainer {
+    color: #000;
+  }
+
+  .searchBar .highlightContainer {
+    border-width: 0;
+    border-radius: 25px;
+  }
+
+  .searchBar:hover .highlightContainer {
+    border-width: 0;
+    border-radius: 25px;
+  }
+
+  .searchBar:focus-within .highlightContainer {
+    border-width: 0;
+    border-radius: 25px;
+  }
